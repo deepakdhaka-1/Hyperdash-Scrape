@@ -34,10 +34,10 @@ def fetch_top_traders():
             print("[DEBUG] Printing full JSON data:")
             print(json.dumps(top_traders_data, indent=4))
 
-            # Save to log.json
-            with open("log.json", "w", encoding="utf-8") as f:
+            # Save to leaderboard.json
+            with open("leaderboard.json", "w", encoding="utf-8") as f:
                 json.dump(top_traders_data, f, ensure_ascii=False, indent=4)
-            print("[DEBUG] Data saved to log.json")
+            print("[DEBUG] Data saved to leaderboard.json")
         else:
             print("[DEBUG] No data captured. Make sure Turnstile is solved and API responded.")
 
